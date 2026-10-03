@@ -12,7 +12,7 @@ client = OpenAI(api_key=api_key)
 
 def ask_chatgpt(user_message):
     response = client.chat.completions.create(
-        model="gpt-4-1106-preview",
+        model="gpt-4o-mini",
         messages=[{"role": "system",
                    "content": "You are a helpful assistant."},
                   {"role": "user", "content": user_message}],
